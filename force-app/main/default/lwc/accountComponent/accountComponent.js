@@ -42,10 +42,10 @@ export default class AccountComponent extends NavigationMixin(LightningElement) 
     }) {
         if (data) {
             console.log('this... account ' + JSON.stringify(data));
-            this.acccount = data;
-            this.name = this.acccount.fields.Name.value;
-            this.phone = this.acccount.fields.Phone.value;
-            this.rating = this.acccount.fields.Rating.value;
+            this.account = data;
+            this.name = this.account.fields.Name.value;
+            this.phone = this.account.fields.Phone.value;
+            this.rating = this.account.fields.Rating.value;
             console.log('----' + JSON.stringify(data.fields.Type));
             this.accType = data.fields.Type.value;
             console.log('this... account ' + JSON.stringify(this.account));
